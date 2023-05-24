@@ -317,11 +317,15 @@ int main(){
 
 行内公式:两个 \$ \LaTeX \$ 之间
 
+
 $m(y)^{(i)}=\sum_{i=1}^{l}\Delta^{(i)} \cdot x^{(i)}_h$
+
 
 行间公式：
 
 Typaro中输入\$\$然后回车
+
+
 $$
 m(y)^{(i)}=\sum\Delta^{(i)} \cdot x^{(i)}_h
 $$
