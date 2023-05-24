@@ -391,7 +391,12 @@ See the section on [`code`](#code).
 
 - `[hobbit-hole][1]`
 - `[hobbit-hole] [2]`
-- `[this is a quote link] [3]`
+
+
+
+[this is a quote link] [3]
+
+
 
 
 
@@ -443,7 +448,7 @@ See the section on [`code`](#code).
 
 
 
-- `[3]  <https://github.com/freepengui/TestMarkdown/blob/main/Markdown 基本语法.md>`
+[3]  <https://github.com/freepengui/TestMarkdown/blob/main/Markdown 基本语法.md>
 
 
 
