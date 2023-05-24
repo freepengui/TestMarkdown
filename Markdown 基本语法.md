@@ -33,7 +33,7 @@ ___
 
 |   Markdown语法   |           HTML           |        效果        |
 | :--------------: | :----------------------: | :----------------: |
-| Heading level  1<br>----------------- | <h1>Heading level 1</h1> | # Heading level 1  |
+| Heading level  1<br>-------------------------- | <h1>Heading level 1</h1> | # Heading level 1  |
 |                  |                          |                    |
 | Heading level 2<br>==============  | <h2>Heading level 2</h2> | ## Heading level 2 |
 
@@ -252,7 +252,29 @@ don't use 1)
 
 ### Markdown 代码语法
 
+要将单词或短语表示为代码，请将其包裹在反引号 (\`) 中。
 
+例：At the command prompt, type `nano`.
+
+###### 转义反引号
+
+如果你要表示为代码的单词或短语中包含一个或多个反引号，则可以通过将单词或短语包裹在双反引号(\``)中。
+
+例：``Use `code` in your Markdown file``
+
+###### 代码块
+
+要创建代码块，请将代码块的每一行缩进至少四个空格或一个制表符。
+
+​	<html>
+
+		<head>
+		    <title>Test</title>
+		</head>
+
+###### 围栏式代码块 （fenced code blocks）
+
+根据Markdown处理器或编辑器的不同，您将在代码块之前和之后的行上使用三个反引号（\```）或三个波浪号（\~~~）。
 
 ```c++
 #include <iostream>
@@ -276,6 +298,52 @@ int main(){
     cout << "hello world!" << endl;
 }
 ```
+
+例：
+
+```latex
+{
+	"firstName": "Jhon",
+	"lastName": "Smith",
+	"age":	25
+}
+```
+
+
+
+### Markdown 公式语法
+
+###### $\LaTeX$ 公式
+
+行内公式:两个 \$ \LaTeX \$ 之间
+
+$m(y)^{(i)}=\sum_{i=1}^{l}\Delta^{(i)} \cdot x^{(i)}_h$
+
+行间公式：
+
+Typaro中输入\$\$然后回车
+$$
+m(y)^{(i)}=\sum\Delta^{(i)} \cdot x^{(i)}_h
+$$
+
+$$
+y^{(i)} = \sum_{j=1}^{t} c_j \cdot x^{(i)}_j +\begin{cases}
+				c &  x= 1\\
+				0 &  x \neq 1
+			\end{cases}
+$$
+
+$$
+\boldsymbol{r} \leftarrow \mathcal{F}_{Rand}(\mathbb{F}^{l+1})
+$$
+
+
+
+
+
+
+
+
 
 ### Markdown 图片语法
 
