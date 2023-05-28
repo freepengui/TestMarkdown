@@ -347,6 +347,16 @@ $$
 \*** or \--- or \__ 为了兼容性，请在分隔线的前后均添加空白行。
 
 
+
+### Markdown删除线语法
+
+您可以通过在单词中心放置一条水平线来删除单词。结果看起来像这样。此功能使您可以指示某些单词是一个错误，要从文档中删除。若要删除单词，请在单词前后使用两个波浪号`~~`
+
+~~世界是平坦的。~~ 我们现在知道世界是圆的
+
+
+
+
 ### Markdown 链接语法
 
 ###### 普通用法
@@ -434,6 +444,38 @@ See the section on [`code`](#code).
 
 
 
+[![沙漠中的岩石图片](./assets/shiprock.jpg "Shiprock")](https://markdown.com.cn)
+
+
+
+### Markdown 转义字符
+
+& <
+
+
+
+### Markdown 内嵌 HTML 标签
+
+对于 Markdown 涵盖范围之外的标签，都可以直接在文件里面用 HTML 本身。如需使用 HTML，不需要额外标注这是 HTML 或是 Markdown，只需 HTML 标签添加到 Markdown 文本中即可。
+
+##### 行级内联标签
+
+HTML 的行级內联标签如 `<span>`、`<cite>`、`<del>` 不受限制，可以在 Markdown 的段落、列表或是标题里任意使用。依照个人习惯，甚至可以不用 Markdown 格式，而采用 HTML 标签来格式化。
+
+HTML 行级內联标签和区块标签不同，在內联标签的范围内， Markdown 的语法是可以解析的。
+
+##### 区块标签
+
+区块元素──比如 `<div>`、`<table>`、`<pre>`、`<p>` 等标签，必须在前后加上空行，以便于内容区分。而且这些元素的开始与结尾标签，不可以用 tab 或是空白来缩进。Markdown 会自动识别这区块元素，避免在区块标签前后加上没有必要的 `<p>` 标签。
+
+### HTML最佳实践用法
+
+出于安全原因，并非所有 Markdown 应用程序都支持在 Markdown 文档中添加 HTML。如有疑问，请查看相应 Markdown 应用程序的手册。某些应用程序只支持 HTML 标签的子集。
+
+
+
+
+
 ### Markdown 扩展语法
 
 #### Markdown 表格语法
@@ -452,7 +494,31 @@ See the section on [`code`](#code).
 
 
 
+### Markdown 任务列表语法
 
+任务列表使您可以创建带有复选框的项目列表。在支持任务列表的Markdown应用程序中，复选框将显示在内容旁边。要创建任务列表，请在任务列表项之前添加破折号`-`和方括号`[ ]`，并在`[ ]`前面加上空格。要选择一个复选框，请在方括号`[x]`之间添加 x 。
+
+- [x] write the press release.
+- [ ] update the website.
+- [ ] Contact the media.
+
+
+
+### Markdown 脚注语法
+
+脚注使您可以添加注释和参考，而不会使文档正文混乱。当您创建脚注时，带有脚注的上标数字会出现在您添加脚注参考的位置。读者可以单击链接以跳至页面底部的脚注内容。
+
+Here's a simple footnote,[^1] and here's a longer one.[^bignote]
+
+[^1]: This is the first footnote.
+
+[^bignote]: Here's one with multiple paragraphs and code.
+
+    Indent paragraphs to include them in the footnote.
+    
+    `{ my code }`
+    
+    Add as many paragraphs as you like.
 
 
 
